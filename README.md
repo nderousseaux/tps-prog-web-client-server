@@ -1,4 +1,4 @@
-# W4b - Compléments de programmation web côté serveur / client
+# W4ab - Compléments de programmation web côté serveur / client
 Bienvenue dans ce module de programmation web :-)
 
 Vous trouverez dans ce dépôt les ressources nécessaires pour la réalisation des TP.
