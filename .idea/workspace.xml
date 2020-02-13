@@ -19,7 +19,7 @@
   <component name="ProjectId" id="1X6dnZCltjdIM8bKjia7wpr5hqD" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Making/Projets/Hermes/Hermes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -46,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580370645267</updated>
       <workItem from="1580370647595" duration="38000" />
+      <workItem from="1580715967509" duration="123000" />
     </task>
     <servers />
   </component>
@@ -57,7 +58,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
