@@ -63,7 +63,7 @@ module.exports = {
             if (mailAddresses.lengh === 0){
                 throw { status: 404, message: 'Requested MailAddress not found' };
             }
-			return mailAddresses.destroy();
+			return mailAddresses[0].destroy();
 		})
         .then(() => res.status(200).end())
         .catch((err) => next(err));
