@@ -1,13 +1,26 @@
 const db = require('../models');
+Sequelize = require('sequelize');
+const Op = Sequelize.Op;
 
 module.exports = {
 	
 	get_all: (req, res, next) => {
-		return req.person.getMailAddresses({
-			order: [ 'type' ]
-		})
-		.then((mailAddresses) => res.json(mailAddresses))
-		.catch((err) => next(err));
+		if(req.query.type !== undefined){
+			return req.person.getMailAddresses({
+				order: [ 'type' ],
+				where: {type: {[Op.like]: req.query.type}}
+			})
+			.then((mailAddresses) => res.json(mailAddresses))
+			.catch((err) => next(err));
+		}
+		else{
+			return req.person.getMailAddresses({
+				order: [ 'type' ],
+			})
+			.then((mailAddresses) => res.json(mailAddresses))
+			.catch((err) => next(err));
+		}
+	
 	},
 	
 	get_by_id: (req, res, next) => {

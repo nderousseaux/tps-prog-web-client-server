@@ -1,13 +1,25 @@
 const db = require('../models');
-
+Sequelize = require('sequelize');
+const Op = Sequelize.Op;
 module.exports = {
 	
 	get_all: (req, res, next) => {
-		return db.Person.findAll({
-			order: [ 'lastname' ]
-		})
-		.then((people) => res.json(people))
-		.catch((err) => next(err));
+		if(req.query.lastname !== undefined){
+			return db.Person.findAll({
+				order: [ 'lastname' ],
+				where: {lastname: {[Op.like]: req.query.lastname}}
+			})
+			.then((people) => res.json(people))
+			.catch((err) => next(err));
+		}
+		else{
+			return db.Person.findAll({
+				order: [ 'lastname' ]
+			})
+			.then((people) => res.json(people))
+			.catch((err) => next(err));
+		}
+		
 	},
 	
 	load_by_id: (req, res, next) => {
