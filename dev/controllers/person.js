@@ -78,6 +78,39 @@ module.exports = {
 		})
 		.then(() => res.status(200).end())
 		.catch((err) => next(err));
+	},
+
+	get_person_by_group: (req, res, next) => {
+		return req.group.getPeople()
+		.then((persons) => {
+			return res.json(persons);
+		})
+		.catch((err) => next(err));
+	
+	},
+	add_group: (req, res, next) => {
+		return db.Person.findByPk(req.params.person_id)
+		.then((person) => {
+			if (!person) {
+				throw { status: 404, message: 'Requested Person not found' };
+			}
+			return req.group.addPerson(person);
+		})
+		.then(() => res.status(200).end())
+		.catch((err) => next(err));
+	
+	},
+	del_group: (req, res, next) => {
+		return db.Person.findByPk(req.params.person_id)
+		.then((person) => {
+		if (!person) {
+			throw { status: 404, message: 'Requested Person not found' };
+		}
+		return req.group.removePeople(person);
+		})
+		.then(() => res.status(200).end())
+		.catch((err) => next(err));
+	
 	}
 
 };
