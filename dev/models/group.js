@@ -4,6 +4,7 @@ module.exports = (sequelize) => {
 
 	class Group extends Sequelize.Model {
 		static associate(db) {
+			Group.belongsTo(db.User, { onDelete: 'cascade' });
 		};
 	}
 

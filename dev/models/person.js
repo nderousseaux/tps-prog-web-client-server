@@ -7,6 +7,8 @@ module.exports = (sequelize) => {
 			Person.hasMany(db.MailAddress, { onDelete: 'cascade' });
 			Person.hasMany(db.PostalAddress, { onDelete: 'cascade' });
 			Person.hasMany(db.Phone, { onDelete: 'cascade' });
+			Person.belongsTo(db.User, { onDelete: 'cascade' });
+
 		}
 	}
 
