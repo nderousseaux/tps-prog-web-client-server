@@ -13,7 +13,6 @@ const Toggle = () => {
   </p>
 }
 
-
 const Counter = () =>{
   let [count,setCount] = useState(0);
   const handleClick = () => {
@@ -24,6 +23,20 @@ const Counter = () =>{
     <p>Vous avez cliqué {count} fois.</p>
   </p>
 }
+
+const Clock = () => {
+
+  let [time, setTime] = useState(new Date().toLocaleTimeString())
+
+  setInterval(() => {
+      setTime(new Date().toLocaleTimeString());
+  }, 1000);
+
+  return (
+      <p>{ time }</p>
+  );
+};
+
 
 
 
@@ -39,7 +52,7 @@ function App() {
       </div>
       <div>
         <h1>Clock :</h1>
-        <p>Nupe</p>
+        <Clock />
       </div>
     </div>
   );
