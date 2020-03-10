@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 const Toggle = () => {
@@ -37,22 +36,72 @@ const Clock = () => {
   );
 };
 
+const ItemsApp = () => {
+  const [items, setItems] = useState([]);
+
+  const removeItem = (index) =>{
+    setItems(items => items.filter((i, idx) => idx !== index)); 
+  }
+  
+  const addItem = (i) =>{
+    setItems(items =>[...items, i]);
+  }
+
+  return <>
+      <AddItemForm addItem={addItem} />
+      <ItemsList items={items} removeItem={removeItem} />
+  </>;
+}
+
+const AddItemForm = ({addItem}) => {
+  const [text, setText] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (text !== '') {
+      addItem(text);
+      setText(text =>'');
+    }
+  };
+  return <form onSubmit={handleSubmit}>
+    <input value={text} onChange={(e) => { setText(e.target.value); }} />
+    <button>Add</button>
+  </form>;
+};
+
+const ItemsList = ({items, removeItem}) => {
+  return <ul>
+    {items.map((item, index) => (
+      <li>
+        {item}
+        <button onClick={() => removeItem(index)}>X</button>
+      </li>
+    ))}
+  </ul>
+};
+
+
 
 
 
 function App() {
   return (<div>
+    <h1>TP n°1</h1>
       <div>
-        <h1>Toggle :</h1>
+        <h2>Toggle :</h2>
         <Toggle />
       </div>
       <div>
-        <h1>Compteur :</h1>
+        <h2>Compteur :</h2>
         <Counter />
       </div>
       <div>
-        <h1>Clock :</h1>
+        <h2>Clock :</h2>
         <Clock />
+      </div>
+      <h1>TP n°2</h1>
+      <div>
+        <h2>Items Form :</h2>
+        <ItemsApp />
       </div>
     </div>
   );
