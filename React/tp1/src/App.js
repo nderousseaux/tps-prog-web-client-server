@@ -36,6 +36,52 @@ const Clock = () => {
   );
 };
 
+
+
+//************************************************ */
+
+const ItemsList = ({items, updateItem, removeItem}) => {
+  return <ul>
+    {items.map((item, index) => (
+      <li key={index}>
+        {`${item.name} : ${item.cost} x${item.quantity}  `}
+				<button onClick={() => removeItem(index)}>x</button>
+      </li>
+    ))}
+  </ul>
+};
+const AddItemForm = ({addItem}) => {
+  let [currentItem, setCurrentItem] = useState({
+    name: '',
+    cost: 1,
+    quantity : 1
+  });
+
+  const handleChange = event => {
+        let newItem = {...currentItem}
+        newItem[event.target.name] = event.target.value;
+        setCurrentItem(newItem);
+    }
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    addItem(currentItem);
+    setCurrentItem({ // Clear input
+            name: '',
+            cost: 0,
+            quantity: 0
+		});
+    }
+
+
+  return <form onSubmit={handleSubmit}>
+    
+    <input type='text' value={currentItem.name} name='name' placeholder='Nom' onChange={handleChange} />
+    <input type='number' value={currentItem.cost} name='cost' onChange={handleChange} />
+    <input type='number' value={currentItem.quantity} name='quantity' onChange={handleChange} />
+    <input type='submit' value='Ajouter' />
+  </form>;
+};
 const ItemsApp = () => {
   const [items, setItems] = useState([]);
 
@@ -43,41 +89,22 @@ const ItemsApp = () => {
     setItems(items => items.filter((i, idx) => idx !== index)); 
   }
   
-  const addItem = (i) =>{
-    setItems(items =>[...items, i]);
+  const addItem = (item) =>{
+    setItems(items =>[{name: item.name, cost: item.cost, quantity: item.quantity},...items]);
   }
 
   return <>
       <AddItemForm addItem={addItem} />
       <ItemsList items={items} removeItem={removeItem} />
+      <p>Total cost : { items.reduce((acc, i) => acc + i.cost* i.quantity, 0) }</p>
   </>;
 }
 
-const AddItemForm = ({addItem}) => {
-  const [text, setText] = useState('');
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (text !== '') {
-      addItem(text);
-      setText(text =>'');
-    }
-  };
-  return <form onSubmit={handleSubmit}>
-    <input value={text} onChange={(e) => { setText(e.target.value); }} />
-    <button>Add</button>
-  </form>;
-};
 
-const ItemsList = ({items, removeItem}) => {
-  return <ul>
-    {items.map((item, index) => (
-      <li>
-        {item}
-        <button onClick={() => removeItem(index)}>X</button>
-      </li>
-    ))}
-  </ul>
-};
+
+
+
+
 
 
 
