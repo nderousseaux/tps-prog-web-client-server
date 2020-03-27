@@ -4,7 +4,7 @@ Sequelize = require('sequelize');
 
 // create Sequelize instance
 const sequelize = new Sequelize('w4a', 'w4a', 'w4aw4aw4a', {
-	host: 'localhost',
+	host: 'mysql.nathanaelderousseaux.fr',
 	port: 3306,
 	dialect: 'mysql',
 	dialectOptions: { decimalNumbers: true }

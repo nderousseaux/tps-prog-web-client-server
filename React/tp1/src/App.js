@@ -11,6 +11,7 @@ import Toggle from './components/toggle.js';
 import Counter from './components/counter.js';
 import Clock from './components/clock.js';
 import Grocery from './components/grocery.js';
+import People from './components/people.js';
 
 function App() {
   return(
@@ -32,6 +33,9 @@ function App() {
             <li>
               <Link to="/grocery">Grocery</Link>
             </li>
+            <li>
+              <Link to="/people">People</Link>
+            </li>
           </ul>
         </nav>
 
@@ -47,6 +51,9 @@ function App() {
           </Route>
           <Route path="/grocery">
             <Grocery />
+          </Route>
+          <Route path="/people">
+            <People />
           </Route>
           <Redirect to="/" />
         </Switch>

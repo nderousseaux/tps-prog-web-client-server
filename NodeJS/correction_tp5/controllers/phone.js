@@ -35,6 +35,7 @@ module.exports = {
 			number: req.body.number || '',
 			type: req.body.type || 'home'
 		};
+
 		return req.person.createPhone(data)
 		.then((phone) => res.json(phone))
 		.catch((err) => next(err));
