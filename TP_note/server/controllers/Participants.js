@@ -19,17 +19,18 @@ module.exports = {
             .catch((err) => next(err));
     },
 
-    // load_by_id: (req, res, next) => {
-    //     return db.Participant.findByPk(req.params.Participant_id)
-    //         .then((Participant) => {
-    //             if (!Participant) {
-    //                 throw { status: 404, message: 'Requested Participant not found' };
-    //             }
-    //             req.Participant = Participant;
-    //             return next();
-    //         })
-    //         .catch((err) => next(err));
-    // },
+    load_by_id: (req, res, next) => {
+        console.log("aa");
+        return db.Participant.findByPk(req.params.participant_id)
+            .then((Participant) => {
+                if (!Participant) {
+                    throw { status: 404, message: 'Requested Participant not found' };
+                }
+                req.Participant = Participant;
+                return next();
+            })
+            .catch((err) => next(err));
+    },
 
     get_by_id: (req, res, next) => {
         return db.Participant.findByPk(req.params.participant_id)

@@ -3,16 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a6dadd05-6c8a-455f-bd53-2103a6f44f5b" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/TP_note/server/controllers/Actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_note/server/controllers/Participants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_note/server/controllers/Taches.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/TP_note/server/models/Actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_note/server/models/Participants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_note/server/models/Taches.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/TP_note/server/routes/Actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_note/server/routes/Participants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_note/server/routes/Taches.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_note/server/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP_note/server/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeJS/correction_tp5/controllers/phone.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/correction_tp5/controllers/phone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_note/server/controllers/Participants.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP_note/server/controllers/Participants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_note/server/models/Participants.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP_note/server/models/Participants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_note/server/models/Taches.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP_note/server/models/Taches.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,6 +109,11 @@
     <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\controllers" />
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\routes" />
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\controllers" />
       <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\routes" />
@@ -150,6 +152,7 @@
       <workItem from="1585318034294" duration="2022000" />
       <workItem from="1585406532938" duration="32000" />
       <workItem from="1585567575135" duration="4624000" />
+      <workItem from="1585572579174" duration="938000" />
     </task>
     <task id="LOCAL-00001" summary="TP5 sans les groupes">
       <created>1585320017907</created>

@@ -4,7 +4,7 @@ module.exports = (sequelize) => {
 
     class Participant extends Sequelize.Model {
         static associate(db) {
-            // Participant.hasMany(db.Action, { onDelete: 'cascade' });
+            Participant.hasMany(db.Action, { onDelete: 'cascade' });
         }
     }
 

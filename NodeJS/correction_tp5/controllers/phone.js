@@ -45,6 +45,7 @@ module.exports = {
 		return req.person.getPhone({
 			where: {
 				id: req.params.phone_id
+
 			}
 		})
 		.then((phones) => {
