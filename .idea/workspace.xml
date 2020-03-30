@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6dadd05-6c8a-455f-bd53-2103a6f44f5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TP_note/server/controllers/Actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_note/server/models/Actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TP_note/server/routes/Actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/client/src/components/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/client/src/components/participant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/client/src/components/taches.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeJS/correction_tp5/controllers/phone.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/correction_tp5/controllers/phone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_note/server/controllers/Participants.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP_note/server/controllers/Participants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_note/server/models/Participants.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP_note/server/models/Participants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP_note/server/models/Taches.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP_note/server/models/Taches.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_note/server/controllers/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP_note/server/controllers/Actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_note/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP_note/server/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +94,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TP_note/server/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TP_note/client/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -106,18 +104,22 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\react" />
       <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\controllers" />
       <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\routes" />
       <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\client\src\components" />
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\react\src\components" />
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\react" />
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\sujet" />
       <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\controllers" />
-      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\routes" />
-      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -152,7 +154,8 @@
       <workItem from="1585318034294" duration="2022000" />
       <workItem from="1585406532938" duration="32000" />
       <workItem from="1585567575135" duration="4624000" />
-      <workItem from="1585572579174" duration="938000" />
+      <workItem from="1585572579174" duration="4261000" />
+      <workItem from="1585577189931" duration="1118000" />
     </task>
     <task id="LOCAL-00001" summary="TP5 sans les groupes">
       <created>1585320017907</created>
@@ -161,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585320017907</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Serveur Fini">
+      <created>1585573698759</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585573698759</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +192,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TP5 sans les groupes" />
-    <option name="LAST_COMMIT_MESSAGE" value="TP5 sans les groupes" />
+    <MESSAGE value="Serveur Fini" />
+    <option name="LAST_COMMIT_MESSAGE" value="Serveur Fini" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585226631586">

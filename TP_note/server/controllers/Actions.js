@@ -11,6 +11,7 @@ module.exports = {
             order: [ 'date' ],
             where
         })
+
             .then((actions) => res.json(actions))
             .catch((err) => next(err));
     },
