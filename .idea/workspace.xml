@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6dadd05-6c8a-455f-bd53-2103a6f44f5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/React/tp1/src/components/people.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/server/controllers/Actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/server/controllers/Participants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/server/controllers/Taches.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/server/models/Actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/server/models/Participants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/server/models/Taches.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/server/routes/Actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/server/routes/Participants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TP_note/server/routes/Taches.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeJS/correction_tp5/controllers/phone.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/correction_tp5/controllers/phone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeJS/correction_tp5/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/correction_tp5/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeJS/correction_tp5/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/correction_tp5/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeJS/dev/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/dev/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeJS/dev/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/dev/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/tp1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/React/tp1/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React/tp1/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/React/tp1/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP_note/server/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/TP_note/server/models/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,20 +52,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="w4a: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="w4a@mysql.nathanaelderousseaux.fr" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="w4a: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="People: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="w4a@mysql.nathanaelderousseaux.fr" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="w4a: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="Users: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -74,7 +59,21 @@
     <favorites_list name="w4ab">
       <favorite_root url="file://$PROJECT_DIR$/React/tp1/src/components/people.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
       <favorite_root url="file://$PROJECT_DIR$/React/tp1/src/components/grocery.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/TP_note/server/routes/Participants.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
     </favorites_list>
+    <favorites_list name="Serveur Participants">
+      <favorite_root url="file://$PROJECT_DIR$/TP_note/server/routes/Participants.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/TP_note/server/models/Participants.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/TP_note/server/controllers/Participants.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+    <favorites_list name="Serveur Tache" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,6 +87,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1X6dnZCltjdIM8bKjia7wpr5hqD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -97,7 +99,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TP_note/server/controllers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -108,6 +110,13 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.codota.intellij.common.configuration.CodotaConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\controllers" />
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\routes" />
+      <recent name="E:\Etudes\Superieur\W-web\w4ab 2\w4ab\TP_note\server\models" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -138,8 +147,18 @@
       <workItem from="1585235130712" duration="3000" />
       <workItem from="1585306546654" duration="52000" />
       <workItem from="1585306620212" duration="7241000" />
-      <workItem from="1585318034294" duration="1829000" />
+      <workItem from="1585318034294" duration="2022000" />
+      <workItem from="1585406532938" duration="32000" />
+      <workItem from="1585567575135" duration="4624000" />
     </task>
+    <task id="LOCAL-00001" summary="TP5 sans les groupes">
+      <created>1585320017907</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585320017907</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +176,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="TP5 sans les groupes" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP5 sans les groupes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585226631586">
