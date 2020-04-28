@@ -21,7 +21,7 @@ app.use((err, req, res, next) => {
 });
 
 // launch server
-const server = app.listen(3001, () => {
+const server = app.listen(3002, () => {
 	const host = server.address().address;
 	const port = server.address().port;
 	console.log('App listening at http://%s:%s', host, port);
